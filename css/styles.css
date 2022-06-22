@@ -1,0 +1,125 @@
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+h1 {
+    font-size: 42px;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+}
+
+/* botões */
+
+#buttons-container button {
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+/* jogo */
+
+#container {
+    display: flex;
+    width: 600px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.box {
+    height: 200px;
+    box-sizing: border-box;
+    flex: 1 1 30%;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    margin: 10px;
+}
+.box:hoover {
+    transform: scale(1.2);
+    transition: 360ms;
+    -webkit-box-shadow: 0px 0px 30px 0px #000000; 
+    box-shadow: 0px 0px 15px 2px #ffffff;
+    color: red;
+}
+
+/* símbolos  */
+
+
+.score-box {
+    margin: 0 20px;
+}
+
+
+.x {
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height: 200px;
+}
+
+.o {
+    width: 40px;
+    height: 40px;
+    border: 5px solid green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 70px;
+
+}
+
+
+/* classe de esconder  */
+
+ .hide {
+    display: none !important;
+}
+
+
+
+/* placar */
+
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#x-scoreboard {
+    color: red;
+    margin-right: 3px;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+/* msg de vitoria */
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20;
+    right: 0;
+    top: 400px;
+    width: 500px;
+    font-size: 50px;
+    background-color: #2BFF88;
+    color: white;
+    padding: 20px;
+    
+}
